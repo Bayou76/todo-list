@@ -52,7 +52,7 @@ Cette application est une **Todo List** avec des fonctionnalités supplémentair
 
 2. Accéder au répertoire du projet :
     ```bash
-    cd todo-list-app
+    cd todo-list
     ```
 
 3. Installer les dépendances :
