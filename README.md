@@ -16,8 +16,25 @@ Cette application est une **Todo List** avec des fonctionnalités supplémentair
 
 ## Structure du Projet
 
-. ├── public │ └── index.html ├── src │ ├── components │ ├── context │ ├── pages │ ├── App.js │ └── index.js ├── README.md └── package.json
-
+```bash
+.
+├── public
+│   └── index.html
+├── src
+│   ├── components
+│   │   ├── EditTodo.js
+│   │   ├── PomodoroTimer.js
+│   │   ├── Stats.js
+│   │   └── TodoItem.js
+│   ├── context
+│   │   └── ThemeContext.js
+│   ├── pages
+│   │   └── TodoApp.js
+│   ├── App.js
+│   └── index.js
+├── README.md
+└── package.json
+```
 
 ## Installation et Configuration
 
