@@ -4,6 +4,18 @@
 
 Cette application est une **Todo List** avec des fonctionnalités supplémentaires comme un Timer Pomodoro, des statistiques, et des rappels pour les dates d'échéance. Elle permet de gérer efficacement les tâches quotidiennes avec un mode sombre intégré pour un meilleur confort visuel.
 
+## Tags
+
+Ce projet est étiqueté avec les tags suivants pour faciliter la découverte et encourager les contributions :
+
+- **open-source**
+- **react**
+- **pomodoro-timer**
+- **todo-list**
+- **beginner-friendly**
+- **good-first-issue**
+
+
 ## Fonctionnalités
 
 - **Ajouter, modifier, supprimer des tâches**
