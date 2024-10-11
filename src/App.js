@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import TodoApp from './pages/TodoApp';
+import Stats from './components/Stats';
 import './App.css';
 
 function App() {
+  const [todos, setTodos] = useState(() => {
+    const savedTodos = localStorage.getItem('todos');
+    return savedTodos ? JSON.parse(savedTodos) : [];
+  });
+
+  // Fonction pour marquer une tâche comme terminée ou non
+  const toggleComplete = (id) => {
+    const updatedTodos = todos.map(todo =>
+      todo.id === id
+        ? { ...todo, completed: !todo.completed, completedAt: !todo.completed ? new Date() : null }
+        : todo
+    );
+    setTodos(updatedTodos); // Mise à jour de l'état des todos
+    localStorage.setItem('todos', JSON.stringify(updatedTodos)); // Sauvegarde dans le localStorage
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TodoApp todos={todos} setTodos={setTodos} toggleComplete={toggleComplete} /> 
+      <Stats todos={todos} /> {/* Passe les todos ici pour les statistiques */}
     </div>
   );
 }

@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Todo List App avec Timer Pomodoro et Statistiques
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Cette application est une **Todo List** avec des fonctionnalités supplémentaires comme un Timer Pomodoro, des statistiques, et des rappels pour les dates d'échéance. Elle permet de gérer efficacement les tâches quotidiennes avec un mode sombre intégré pour un meilleur confort visuel.
 
-In the project directory, you can run:
+## Fonctionnalités
 
-### `yarn start`
+- **Ajouter, modifier, supprimer des tâches**
+- **Priorisation des tâches** (basse, moyenne, haute)
+- **Minuteur Pomodoro** pour la gestion du temps
+- **Graphique en camembert** pour visualiser les tâches terminées et en attente
+- **Mode sombre et clair**
+- **Filtrage des tâches** (toutes, actives, complétées)
+- **Sauvegarde locale** des tâches via `localStorage`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Structure du Projet
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+. ├── public │ └── index.html ├── src │ ├── components │ ├── context │ ├── pages │ ├── App.js │ └── index.js ├── README.md └── package.json
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation et Configuration
 
-### `yarn build`
+### Prérequis
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Node.js** (v12+)
+- **npm** ou **yarn**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Étapes d'installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Cloner le dépôt :
+    ```bash
+    git clone https://github.com/votre-utilisateur/todo-list-app.git
+    ```
 
-### `yarn eject`
+2. Accéder au répertoire du projet :
+    ```bash
+    cd todo-list-app
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Installer les dépendances :
+    ```bash
+    npm install
+    # ou
+    yarn install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Lancer l'application :
+    ```bash
+    npm start
+    # ou
+    yarn start
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+L'application sera accessible sur `http://localhost:3000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Utilisation
 
-## Learn More
+### Ajouter une tâche
+1. Saisissez la description de la tâche.
+2. Sélectionnez une priorité et une date d'échéance (facultatif).
+3. Cliquez sur **Ajouter** ou appuyez sur **Entrée**.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Modifier ou supprimer une tâche
+- **Modifier** : Cliquez sur le bouton "Modifier" pour changer la description.
+- **Supprimer** : Utilisez le bouton "Supprimer" pour effacer la tâche.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Timer Pomodoro
+1. Ajustez la durée avec les boutons "+" et "-".
+2. Cliquez sur **Démarrer** pour lancer le timer, puis sur **Pause** pour l'arrêter.
 
-### Code Splitting
+### Statistiques
+- Accédez à la section **Statistiques** pour voir un graphique en camembert des tâches complétées et non complétées.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Mode sombre
+- Cliquez sur l'icône du soleil ou de la lune pour basculer entre les modes sombre et clair.
 
-### Analyzing the Bundle Size
+## Sauvegarde des données
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+L'application utilise **localStorage** pour sauvegarder vos tâches localement. Vous retrouverez toutes vos tâches après actualisation de la page.
 
-### Making a Progressive Web App
+## Technologies Utilisées
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **React** : pour la gestion de l'interface utilisateur
+- **Chart.js** : pour afficher des graphiques
+- **React Icons** : pour les icônes
+- **CSS** : pour le stylage des composants et la gestion des thèmes
 
-### Advanced Configuration
+## Améliorations Futures
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Notifications et rappels
+- Gestion de sous-tâches
+- Authentification pour synchronisation des tâches
 
-### Deployment
+## Licence
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ce projet est sous licence MIT. Vous êtes libre de l'utiliser, le modifier, et contribuer en soumettant des pull requests.
