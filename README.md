@@ -9,7 +9,7 @@ Cette application est une **Todo List** avec des fonctionnalités supplémentair
 Ce projet est étiqueté avec les tags suivants pour faciliter la découverte et encourager les contributions :
 
 [![Open Source](https://img.shields.io/badge/Open%20Source-%E2%9C%94-brightgreen)](https://github.com/votre-utilisateur/todo-list-app)
-[![Beginner Friendly](https://img.shields.io/badge/Beginner%20Friendly-%E2%9C%94-blue)](https://github.com/votre-utilisateur/todo-list-app/CONTRIBUTING.md)
+[![Beginner Friendly](https://img.shields.io/badge/Beginner%20Friendly-%E2%9C%94-blue)](https://github.com/votre-utilisateur/todo-list-app/blob/main/CONTRIBUTING.md)
 [![Good First Issue](https://img.shields.io/badge/Good%20First%20Issue-%F0%9F%91%8C-blueviolet)](https://github.com/votre-utilisateur/todo-list-app/issues)
 [![React](https://img.shields.io/badge/React-%E2%9D%A4-61DAFB)](https://reactjs.org/)
 [![Pomodoro](https://img.shields.io/badge/Pomodoro-Timer-red)](#timer-pomodoro)
