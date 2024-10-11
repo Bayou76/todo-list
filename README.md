@@ -47,7 +47,7 @@ Cette application est une **Todo List** avec des fonctionnalités supplémentair
 
 1. Cloner le dépôt :
     ```bash
-    git clone https://github.com/votre-utilisateur/todo-list-app.git
+    git clone https://github.com/Bayou76/todo-list
     ```
 
 2. Accéder au répertoire du projet :
